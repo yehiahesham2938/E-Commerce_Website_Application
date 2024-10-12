@@ -1,6 +1,3 @@
-import javax.sound.midi.SysexMessage;
-import javax.swing.text.Style;
-
 public class Electronics extends Product{
     String brand;
     Electronics(String Name, String Brand, double Price, int Stock)
