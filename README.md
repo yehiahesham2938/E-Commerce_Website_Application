@@ -1,1 +1,2 @@
- a simple e-commerce website application that demonstrates the use of Object-Oriented Programming (OOP) concepts, including encapsulation, inheritance, polymorphism, method overriding, method overloading, interfaces, functional interfaces, and abstract classes.
+# Simple E-Commerce Website Application
+A simple e-commerce website application that demonstrates the use of Object-Oriented Programming (OOP) concepts, including encapsulation, inheritance, polymorphism, method overriding, method overloading, interfaces, functional interfaces, and abstract classes.
