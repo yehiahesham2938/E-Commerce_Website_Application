@@ -22,11 +22,24 @@ public class ShoppingCart implements ShoppingCartOperations {
 
     @Override
     public void removeProduct(Product product) {
-
+        if(productList.contains(product)){
+            productList.remove(product);
+            int currentStock = product.getStock();
+            product.setStock(currentStock + 1);
+            System.out.println("Product " + product.name + " Has been removed from the cart.");
+        }
+        else{
+            System.out.println("Product " + product.name + " was not found in the cart.");
+        }
     }
 
     @Override
     public double calculateTotal() {
-        return 0;
+        int size = productList.size();
+        double Price = 0;
+        for (int i = 0 ; i < size ; i++){
+           Price += productList.get(i).getPrice();
+        }
+        return Price;
     }
 }
