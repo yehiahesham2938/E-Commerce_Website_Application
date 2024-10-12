@@ -6,6 +6,10 @@ public class ShoppingCart implements ShoppingCartOperations {
     ShoppingCart(){
         productList = new ArrayList<>();
     }
+    public List<Product> returnList(){
+        return productList;
+    }
+
 
     @Override
     public void addProduct(Product product) {
@@ -16,7 +20,7 @@ public class ShoppingCart implements ShoppingCartOperations {
             System.out.println("Product "+ product.getName() + " Has been Added to the cart");
         }
         else if(product.getStock() < 1){
-            System.out.println("Product " + product.getName() + "Is out of Stock.");
+            System.out.println("Product " + product.getName() + " Is out of Stock.");
         }
     }
 
